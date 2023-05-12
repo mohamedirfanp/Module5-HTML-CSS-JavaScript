@@ -1,0 +1,90 @@
+body
+{
+    background-color: black;
+}
+.grid-container
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 2px solid wheat;
+}
+.grid-item
+{
+    color : black;
+    text-align: center;
+    padding: 2rem;
+    border: 1rem solid royalblue;
+    background-color: aliceblue;
+}
+
+
+.image-row {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation: slideIn 2s linear;
+    position: relative;
+    gap: 1rem;
+    z-index: 1;
+}
+
+.image-row > img
+{
+    width: 400px;
+    height: auto;
+    border-radius: 2rem;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+ 
+.image-row img:hover
+{
+    animation: scale 1s ease-in-out;
+}
+@keyframes scale {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+    }
+
+.image-carosel {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-gap: 10px;
+        /* width: ;  */
+        /* overflow-x: hidden;  */
+        animation: carouselAnim 6s linear infinite;
+    }
+      
+
+.image-carosel > img
+{
+    width: 400px;
+    height: auto;
+    border-radius: 2rem;
+
+}
+
+@keyframes carouselAnim {
+    0% { transform: translateX(0); }
+    100% { transform: translatex(-144vw); }
+  }

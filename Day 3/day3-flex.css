@@ -103,7 +103,7 @@ body
 
 .image-row-reverse
 {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     opacity: 0;
