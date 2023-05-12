@@ -1,0 +1,209 @@
+:root{
+    --templateColor:#00b289;
+    --fontColor:#4c4d5f;
+
+}
+
+body{
+    margin:0;
+    padding:0;
+    color: var(--fontColor);
+
+}
+
+
+/* HEADER CSS */
+header
+{
+    margin-top: 1rem;
+}
+
+.icon{
+    color: var(--templateColor);
+    align-items: center;
+    display: flex;
+}
+
+.nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav > .nav-links 
+{
+    display: flex;
+    column-gap: 3rem;
+}
+
+.rotate{
+    margin-left: .5rem;
+    transform: rotate(-90deg);
+    display: inline-block;
+}
+
+.btn
+{
+
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.login
+{
+    background-color: white;
+    border: 1px solid var(--templateColor);
+    color : var(--templateColor);
+}
+.login:hover
+{
+    background-color: var(--templateColor);
+    color: white;
+}
+
+.start
+{
+    background-color: var(--templateColor);
+    color: white;
+    border: 1px solid var(--templateColor);
+}
+.start:hover
+{
+    background-color: white;
+    color: var(--templateColor);
+    border: 1px solid var(--templateColor);
+}
+
+/* PRICE HEADER */
+.price-header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    position: relative;
+}
+
+/* TOOGLE SWITCH */
+
+.toggle
+{
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.switch
+{
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.slider
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00b289;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.switch input {display: none;}
+
+.slider::before
+{
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    left: 5px;
+    /* right: -5px; */
+    bottom: 5px;
+    top: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50px;
+
+}
+
+input:checked + .slider
+{
+    background-color: #00b289;
+}
+
+input:checked + .slider::before
+{
+    transform: translateX(20px);
+
+}
+
+/* PRICE CARD CSS */
+
+.card-content
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+}
+.card{
+    width: 20%;
+    border: 1px solid black;   
+    overflow: hidden;
+    padding: 1em 3em;
+}
+.card-content :nth-child(2){
+    
+}
+
+.card > .badge
+{
+    color: #00b289;
+    z-index: 1;
+    padding: 0.2rem .7rem .2rem .7rem;
+    transform: rotate(45deg);
+    display: inline-flex;
+    background-color: #4c4d5f;
+    position: absolute;
+    right: 18%;
+}
+
+ul
+{
+    list-style-type: none;
+    line-height: 2em;
+    padding: 0;
+}
+li::before
+{
+    list-style-type: none;
+    content: "\2713";
+    padding: 8px;
+    color: var(--templateColor);
+}
+
+hr
+{
+   border : 1px solid var(--templateColor);
+}
+.btn-div
+{
+    text-align: center;
+}
+
+.btn-div > .btn
+{
+    padding: 1rem 3rem 1rem 3rem;
+    background-color: var(--templateColor);
+    color: white;
+    border: none;
+}
