@@ -76,6 +76,14 @@ header
     border: 1px solid var(--templateColor);
 }
 
+
+.main-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* PRICE HEADER */
 .price-header
 {
@@ -207,3 +215,58 @@ hr
     color: white;
     border: none;
 }
+
+.add-ons
+{
+    margin-top: 3rem;
+
+}
+.add-ons > h2{
+    text-align: center;
+}
+
+.add-ons-content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item
+{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px 4px rgb(188, 181, 181,0.4);
+}
+
+.font-price > .price
+{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+.learn-more
+{
+    color: var(--templateColor);
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+/* Bussiness card */
+.business-card-content
+{
+    background-color: rgb(187, 246, 232, 0.7);
+    width: 60%;
+    padding: 3rem 2rem ;
+
+}
+.business-card-green
+{
+    color: #00b289;
+}
+

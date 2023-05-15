@@ -72,7 +72,7 @@ body
         grid-gap: 10px;
         /* width: ;  */
         /* overflow-x: hidden;  */
-        animation: carouselAnim 6s linear infinite;
+        animation: carouselAnim 10s linear infinite;
     }
       
 
@@ -84,7 +84,12 @@ body
 
 }
 
+.image-carosel:hover
+{
+    animation-play-state: paused;
+}
+
 @keyframes carouselAnim {
-    0% { transform: translateX(0); }
-    100% { transform: translatex(-144vw); }
+    from { transform: translateX(-100%); }
+    to { transform: translatex(100%); }
   }
